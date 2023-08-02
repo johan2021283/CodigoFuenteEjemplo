@@ -1,0 +1,20 @@
+public class Saludo {
+    public static void main(String[] args) {
+        String idioma = "fr"; // en "fr" se debe de cambiar y colocar las iniciales que aparecen a la par de case
+        String saludo = obtenerSaludoPorIdioma(idioma);
+        System.out.println(saludo);
+    }
+
+    public static String obtenerSaludoPorIdioma(String idioma) {
+        switch (idioma) {
+            case "es":
+                return "¡Hola, Mundo!";
+            case "en":
+                return "Hello, World!";
+            case "fr":
+                return "Bonjour, Monde!";
+            default:
+                return "Saluton, Mondo!"; 
+        }
+    }
+}

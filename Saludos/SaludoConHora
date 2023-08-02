@@ -1,0 +1,19 @@
+import java.time.LocalTime;
+
+public class Saludo {
+    public static void main(String[] args) {
+        LocalTime horaActual = LocalTime.now();
+        int hora = horaActual.getHour();
+        String saludo;
+
+        if (hora >= 6 && hora < 12) {
+            saludo = "Buenos días";
+        } else if (hora >= 12 && hora < 18) {
+            saludo = "Buenas tardes";
+        } else {
+            saludo = "Buenas noches";
+        }
+
+        System.out.println(saludo + ", Mundo!");
+    }
+}

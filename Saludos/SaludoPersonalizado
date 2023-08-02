@@ -1,0 +1,10 @@
+public class Saludo {
+    public static void main(String[] args) {
+        String nombre = "Johan";
+        imprimirSaludoPersonalizado(nombre);
+    }
+
+    public static void imprimirSaludoPersonalizado(String nombre) {
+        System.out.println("Hola, " + nombre + " Bienvenido");
+    }
+}
